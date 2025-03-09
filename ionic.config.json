@@ -1,0 +1,7 @@
+{
+  "name": "AppBurger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
