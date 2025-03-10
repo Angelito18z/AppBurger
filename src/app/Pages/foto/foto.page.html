@@ -7,10 +7,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">foto</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <!-- Mostrar imagen capturada -->
+  <div class="image-container" >
+    <img [src]="imageUrl || 'assets/img/default-image.png' " alt="Imagen seleccionada" />
+  </div>
+
+  <!-- Botones para tomar foto o seleccionar de la galería -->
+  <ion-button class="button" (click)="presentActionSheet()">
+    <ion-icon name="camera" size="large"></ion-icon>
+  </ion-button>
+  
 </ion-content>
