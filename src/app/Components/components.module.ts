@@ -9,7 +9,8 @@ import { TxtTotalComponent } from './txt-total/txt-total.component';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 
-
+import { JoinExtrasPipe } from '../join-extras.pipe';
+import { PaypalComponent } from './paypal/paypal.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,13 @@ import { FormsModule } from '@angular/forms';
     ButtonCalculateComponent,
     PayTypeComponent,
     TxtTotalComponent,
+    PaypalComponent
   ],
   imports: [
     CommonModule,
     IonicModule,
-    FormsModule
+    FormsModule,
+    JoinExtrasPipe
   ],
   exports:[
     BurgerComplementsComponent,
@@ -32,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     ButtonCalculateComponent,
     PayTypeComponent,
     TxtTotalComponent,
+    PaypalComponent
   ]
 })
 export class ComponentsModule { }

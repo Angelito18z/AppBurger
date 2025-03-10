@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ToastController } from '@ionic/angular';
-import { PedidoService } from '../Services/pedido.service';
+import { PedidoService } from '../../Services/pedido.service';
 
 @Component({
   selector: 'app-home',

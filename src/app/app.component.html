@@ -1,3 +1,44 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Menú lateral -->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item routerLink="/home" routerDirection="root">
+          <ion-icon name="logo-paypal" slot="start"></ion-icon>
+          <ion-label>Paypal</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/foto" routerDirection="root">
+          <ion-icon name="camera" slot="start"></ion-icon>
+          <ion-label>Foto</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/qr" routerDirection="root">
+          <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+          <ion-label>Qr</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/social" routerDirection="root">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>
+          <ion-label>Facebook</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/google" routerDirection="root">
+          <ion-icon name="logo-google" slot="start"></ion-icon>
+          <ion-label>Google</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Contenido principal con el ID correcto -->
+  <div class="ion-page" id="main-content">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
 </ion-app>
