@@ -1,0 +1,15 @@
+
+<ion-item class="item-container">
+  <ion-select (ionChange)="seleccionarSabor($event)" [value]="seleccion" justify="start" interface="popover" color="primary" placeholder="Hamburguesas">
+    <ion-select-option value="sencilla">Sencilla <span >$30</span></ion-select-option>
+    <ion-select-option value="doble">Doble <span >$40</span></ion-select-option>
+    <ion-select-option value="triple">Triple <span >$60</span></ion-select-option>
+    <ion-select-option value="especial">Especial <span >$75</span></ion-select-option>
+  </ion-select>
+  
+
+  <!-- Cuadro para la imagen -->
+  <div class="image-box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYHp0KzDKzYTLYo_e9vdrTSgz_Ra-lUgU7ow&s" alt="Imagen">    
+  </div>
+</ion-item>

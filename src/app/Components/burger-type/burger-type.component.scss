@@ -1,0 +1,32 @@
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    ion-select {
+      flex: 1;
+    }
+
+  
+  
+    .image-box {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 8px;
+      color: #888;
+      font-size: 14px;
+      border-radius: 50%;
+    }
+  }
+  ion-select-option {
+  display: flex;
+  justify-content: space-between; /* Espacia el contenido hacia ambos lados */
+  align-items: center;
+}
+
+
+
+  

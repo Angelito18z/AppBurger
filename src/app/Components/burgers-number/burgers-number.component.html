@@ -1,0 +1,11 @@
+<ion-item>
+  <ion-label position="floating">Cantidad</ion-label>
+  <ion-input 
+    [(ngModel)]="cantidad" 
+    type="number" 
+    min="1" 
+    max="99" 
+    (ionInput)="validarCantidad($event)" 
+    placeholder="1-99">
+  </ion-input>
+</ion-item>
