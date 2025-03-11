@@ -7,10 +7,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">qr</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" *ngIf="!qr.scan">
+  <h2>RESULTADO: {{qr.scanResult}}</h2>
+  <br>
 </ion-content>
+
+<div *ngIf="qr.scan" style="background-color: transparent;">
+  <ion-card id="qr_card">
+  </ion-card>
+  <ion-button id="btn_flash" fill="outline" size="medium" (click)="Flashlight()" >Flash</ion-button>
+</div>
+
+
+<ion-footer>
+  <ion-button id="btn_qr" (click)="Scaneo()">
+    ESCANEAR
+  </ion-button>
+</ion-footer>

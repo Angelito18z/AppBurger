@@ -1,0 +1,34 @@
+ion-content{
+  --background:#353535;
+  padding: 0.5rem;
+  --color:#40e014;
+  text-align: center;
+}
+
+ion-footer{
+  background-color: #252525;
+}
+
+#btn_qr{
+  --background:#40e014;
+  width: 99%;
+  font-weight: bold;
+}
+
+#qr_card{
+  background-color: transparent; 
+  border:#40e014 solid 0.2rem; 
+  width: 20rem; 
+  height: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20%;
+}
+
+#btn_flash{
+  width: 4rem;
+  height: 4rem;
+  --background:#40e014;
+  --border-color:black;
+  margin-left: 41%;
+}
