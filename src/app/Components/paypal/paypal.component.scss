@@ -1,0 +1,20 @@
+.paypal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Aumentar el tamaño del botón */
+  .paypal-container ngx-paypal {
+    padding-top:20px;
+    transform: scale(1.3); /* Ajusta el tamaño (1.3 = 30% más grande) */
+  }
+
+  

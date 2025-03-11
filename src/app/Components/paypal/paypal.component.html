@@ -1,13 +1,11 @@
-<!-- Esta es la parte de la página principal que se desplaza cuando el menú está abierto -->
+<!-- Contenedor principal -->
 <div class="ion-page" id="main-content">
   <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title>
-        Burger App
-      </ion-title>
+      <ion-title>Burger App</ion-title>
       
       <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button> <!-- Botón que abre el menú -->
+        <ion-menu-button></ion-menu-button>
       </ion-buttons>
     
       <ion-buttons slot="end"> 
@@ -16,9 +14,6 @@
         </ion-button>
       </ion-buttons>
     </ion-toolbar>
-    
-
-
   </ion-header>
 
   <ion-content [fullscreen]="true">
@@ -40,6 +35,12 @@
       <ion-button (click)="calcular()" shape="round">Calcular</ion-button>
     </div>
 
-    <h4 class="text">Total a pagar: $ {{total}}</h4>
+    <h4 class="text">Total a pagar: {{total2 }} </h4>
+
+    <!-- Contenedor del botón de PayPal -->
+    <div style="padding:9px; ">
+      <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+    </div>
+
   </ion-content>
 </div>

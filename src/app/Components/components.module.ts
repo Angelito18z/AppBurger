@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 
 import { JoinExtrasPipe } from '../join-extras.pipe';
 import { PaypalComponent } from './paypal/paypal.component';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PaypalComponent } from './paypal/paypal.component';
     CommonModule,
     IonicModule,
     FormsModule,
-    JoinExtrasPipe
+    JoinExtrasPipe,
+    NgxPayPalModule
   ],
   exports:[
     BurgerComplementsComponent,
