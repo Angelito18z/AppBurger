@@ -1,34 +1,36 @@
-ion-content{
-  --background:#353535;
+ion-content {
+  --background: #1e1e2e;
   padding: 0.5rem;
-  --color:#40e014;
+  --color: #00c8ff;
   text-align: center;
 }
 
-ion-footer{
-  background-color: #252525;
+ion-footer {
+  background-color: #181825;
 }
 
-#btn_qr{
-  --background:#40e014;
+#btn_qr {
+  --background: #00c8ff;
   width: 99%;
   font-weight: bold;
+  color: #ffffff;
 }
 
-#qr_card{
-  background-color: transparent; 
-  border:#40e014 solid 0.2rem; 
-  width: 20rem; 
+#qr_card {
+  background-color: transparent;
+  border: #00c8ff solid 0.2rem;
+  width: 20rem;
   height: 20rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20%;
 }
 
-#btn_flash{
+#btn_flash {
   width: 4rem;
   height: 4rem;
-  --background:#40e014;
-  --border-color:black;
+  --background: #00c8ff;
+  --border-color: #181825;
   margin-left: 41%;
+  color: #ffffff;
 }
