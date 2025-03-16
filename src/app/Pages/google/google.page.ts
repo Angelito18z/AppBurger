@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {GoogleAuth} from '@codetrix-studio/capacitor-google-auth';
+import {isPlatform} from '@ionic/angular';
 
 @Component({
   selector: 'app-google',
@@ -7,10 +9,26 @@ import { Component, OnInit } from '@angular/core';
   standalone:false
 })
 export class GooglePage implements OnInit {
+  user = null;
 
-  constructor() { }
+  constructor() { 
+    if(!isPlatform('capacitor')){
+      GoogleAuth.initialize();
+    }
+  }
+
 
   ngOnInit() {
+  }
+
+  async signIn(){
+    this.user = await GoogleAuth.signIn();
+    console.log('user: ', this.user);
+  }
+
+  async refresh(){
+    const authCode = await GoogleAuth.refresh();
+    console.log('refresh: ', authCode);
   }
 
 }
