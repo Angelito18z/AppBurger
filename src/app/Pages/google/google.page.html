@@ -10,13 +10,16 @@
 <ion-content>
   <div *ngIf="!user; else userInfo">
     <div id="google-signin-button"></div>
+    <ion-button (click)="signIn()">
+      <ion-icon name="logo-google"></ion-icon>
+    </ion-button>
   </div>
 
   <ng-template #userInfo>
     <div>
-      <h2>Bienvenido {{ user.name }}!</h2>
+      <h2>Hola {{ user.name }}</h2>
       <img [src]="user.imageUrl" alt="User profile picture">
-      <p>Email: {{ user.email }}</p>
+      <p>Email: {{ user.email }} </p>
       <ion-button (click)="signOut()">Sign Out</ion-button>
     </div>
   </ng-template>

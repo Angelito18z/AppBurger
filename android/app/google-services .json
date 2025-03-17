@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579152570348",
+    "project_id": "login-54556",
+    "storage_bucket": "login-54556.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579152570348:android:b667af3529f30d26b0c2c9",
+        "android_client_info": {
+          "package_name": "io.ionic.appburger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeXjJU6Hb2o_dcTLQPvgBMQ1c4h8YPVow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
