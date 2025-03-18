@@ -57,7 +57,7 @@ export class GooglePage implements AfterViewInit, OnInit {
   // Inicializar GIS para web
   private initializeGIS() {
     google.accounts.id.initialize({
-      client_id: '197199548223-mjhv02bg8sok044scaho6q7o7icfmp48.apps.googleusercontent.com', // Reemplaza con tu ID de cliente web
+      client_id: '197199548223-mjhv02bg8sok044scaho6q7o7icfmp48.apps.googleusercontent.com',
       callback: (response: any) => this.handleCredentialResponse(response),
     });
 
