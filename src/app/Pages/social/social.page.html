@@ -8,9 +8,19 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">social</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <!-- Botón de login -->
+  <ion-button (click)="loginWithGithub()" *ngIf="!user">
+    <ion-icon name="logo-github"></ion-icon>
+    Iniciar sesión con GitHub
+  </ion-button>
+
+  <!-- Información del usuario -->
+  <div *ngIf="user" class="user-info">
+    <ion-avatar>
+      <img [src]="user.photoURL" alt="Foto de perfil" />
+    </ion-avatar>
+    <h2>{{ user.displayName }}</h2>
+    <p>{{ user.email }}</p>
+    <ion-button (click)="logout()">Cerrar sesión</ion-button>
+  </div>
 </ion-content>
